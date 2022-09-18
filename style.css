@@ -12,3 +12,8 @@ body{
 	margin: 0 auto;
 }
 
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
