@@ -7,5 +7,13 @@ body{
     align-items: center;
 	font-family: Arial, Helvetica;
 	text-align: center;
-    color: blue;
+    color: black;
+}
+
+.header {
+	background-color: pink;
+	text-align: center;
+	margin: 0 auto;
+    width: 90%;
+	border: 2px solid rgb(0, 0, 0);
 }
