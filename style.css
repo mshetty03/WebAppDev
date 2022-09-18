@@ -2,18 +2,12 @@
 	text-align: center;
 }
 body{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-	font-family: Arial, Helvetica;
 	text-align: center;
-    color: black;
 }
 
 .header {
-	background-color: burlywood;
+	background-color: pink;
 	text-align: center;
-	margin: 0;
-    width: 90%;
-	border: 2px solid black;
+	margin: 0 auto;
 }
