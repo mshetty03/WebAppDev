@@ -22,7 +22,7 @@ body{
 	margin: 0 auto;
     position: absolute;
     word-wrap: normal; 
-    
+    display: block;
     top: 25%;
     right: 8%;
     left: 8%;
@@ -34,6 +34,7 @@ body{
     text-align: center;
     align-items: center;
 	margin: 0 auto;
+    display: block;
     position: absolute;
     word-wrap: normal; 
    
@@ -48,6 +49,7 @@ body{
     text-align: center;
     align-items: center;
 	margin: 0 auto;
+    display: block;
     position: absolute;
     word-wrap: normal; 
     
