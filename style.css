@@ -11,42 +11,48 @@ body{
 	background-color: pink;
 	text-align: center;
 	margin: 0 auto;
-    width: 85%;
+    width: 90%;
     border: 2px solid rgb(0, 0, 0);
 }
 
 .content1 {
     background-color: wheat;
     text-align: center;
+    align-items: center;
 	margin: 0 auto;
     position: absolute;
-    word-wrap: break-word; 
+    word-wrap: normal; 
+    
     top: 25%;
-    left: 8%;
     right: 8%;
+    left: 8%;
     
 }
 
 .content2 {
     background-color: wheat;
     text-align: center;
+    align-items: center;
 	margin: 0 auto;
     position: absolute;
-    word-wrap: break-word; 
+    word-wrap: normal; 
+   
     top: 45%;
-    left: 8%;
     right: 8%;
+    left: 8%;
     
 }
 
 .content3 {
     background-color: gainsboro;
     text-align: center;
+    align-items: center;
 	margin: 0 auto;
     position: absolute;
-    word-wrap: break-word; 
+    word-wrap: normal; 
+    
     top: 80%;
-    left: 8%;
     right: 8%;
+    left: 8%;
     
 }
