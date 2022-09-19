@@ -23,28 +23,14 @@ body{
     position: absolute;
     word-wrap: normal; 
     display: block;
-    top: 25%;
-    right: 8%;
-    left: 8%;
+    top: 35%;
+    right: 20%;
+    left: 20%;
     
 }
+
 
 .content2 {
-    background-color: wheat;
-    text-align: center;
-    align-items: center;
-	margin: 0 auto;
-    display: block;
-    position: absolute;
-    word-wrap: normal; 
-   
-    top: 45%;
-    right: 8%;
-    left: 8%;
-    
-}
-
-.content3 {
     background-color: gainsboro;
     text-align: center;
     align-items: center;
@@ -54,7 +40,7 @@ body{
     word-wrap: normal; 
     
     top: 80%;
-    right: 8%;
-    left: 8%;
+    right: 20%;
+    left: 20%;
     
 }
