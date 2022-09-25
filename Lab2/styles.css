@@ -1,12 +1,13 @@
 /* Flexbox Part 1 */
 
+
 #flex-section1 ul {
 
 	display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-evenly;
-
+	justify-content: space-around;
+	padding: 0 20px;
 }
 
 /* end Flexbox Part 1 */
@@ -18,41 +19,64 @@
 
 	display: flex;
     list-style: none;
-    align-items: center;
-    justify-content: space-evenly;
+	padding: 0 20px;
+	margin: 0 auto;
 
 }
 
 #flex-section2 li {
 
+	
 }
 
 #flex-section2 .item1 {
-
+	
+flex:1;
+order:1;
 }
 
-#flex-section2 .item2 {
 
+#flex-section2 .item2 {
+	flex:1;
+    order:3;
 }
 
 #flex-section2 .item3 {
-
+	flex:1;
+    order:2;
 }
 
 /* end Flexbox Part 2 */
+
+
+
 
 
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
 
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  
+
 }
 
 #flex-section3 .tags ul {
 
+	list-style: none;
+	flex-wrap: wrap;
+	flex-direction: column;
+
 }
 
 /* end Flexbox Part 3 */
+
+
+
+
 
 
 /* Grid Part 1 */
