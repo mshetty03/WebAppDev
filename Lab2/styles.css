@@ -191,20 +191,16 @@ order:1;
 	color: #000;
 	padding: 20px;
 	text-decoration: none;
-	
-	transition-duration: 0.5s;
-
+	transition: all 3s ease-in-out;
+    
 
 }
 
 #transition-section .box a:hover {
 	background-color: #cc0000;
 	color: #fff;
-	
-	transition-duration: 0.5s;
-	
-
-
+	transition: all .5s ease-in-out;
+    
 }
 
 /* end Transition Part */
