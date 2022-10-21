@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tax Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="title1">
+                    ITMD 541- Lab3- Megha Shetty
+            </div>
+            <div class="title2">
+                Tip Calculator
+             </div>
+        </section>
+		<section class="tipcalculator">
+			<form class="inputform">
+                <div class="input">
+                    <div class="box">
+                        <div class="inputbox" id="Billtotal">
+                            <label for="Billtotal">Bill Total: </label>
+                            <input type="text" name="Billtotal" id="Billtotal"><br><br>
+                        </div>
+                        <div class="range">
+                            <label for="Tip">Tip: </label>
+                            <input type="range" name="Tip" min="1" id="Tip" value="100"><br><br>
+                        </div>
+                        <div class="inputbox">
+                            <label for="TipPercentage">Tip Percentage: </label>
+                           <input type="text" name="Tip Percentage" id="Tip Percentage" disabled><br><br>
+                       </div>
+                      <div class="inputbox">
+                            <label for="TipAmount">Tip Amount: </label>
+                            <input type="text" name="Tip Amount" id="Tip Amount" disabled><br><br>
+                      </div>
+                      <div class="inputbox">
+                            <label for="TotalBillwithTip">Total Bill with Tip: </label>
+                            <input type="text" name="Total Bill with Tip" id="Total Bill with Tip" disabled><br><br>
+                     </div>
+                    </div>
+                </div>
+			</form>
+		</section>
+	</div>
