@@ -82,7 +82,8 @@ body{
     display: flex;
     align-items: center;
     gap: 1rem;
-    
+    padding-right: 1rem;
+	
 }
 
 input[type="range"] {
