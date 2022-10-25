@@ -90,7 +90,7 @@ background: #bebbbb;
   }
 }
  
-/* For Mobile Landscape View */
+
 @media screen and (max-width: 640px)
  {
   .input-form {
@@ -100,6 +100,13 @@ background: #bebbbb;
 }
  
  
-
+/* For Mobile  View */
+@media screen and (max-width: 320px)
+ {
+  .input-form {
+    width: 200px;
+    
+  }
+}
  
 
