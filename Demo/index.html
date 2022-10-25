@@ -9,51 +9,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        
-        <section>
-            <div class="title1">
-                    ITMD 541- Lab3- Megha Shetty
-            </div>
-            <div class="title2">
-                Tip Calculator
-             </div>
-        </section>
-        <section>
-            <div class="tipcalculator">
-                <form class="input-form">
-                     <div class="input">
-                            <div class="box">
-                                    <div class="input-box" id="billtotalbox">
-                                        <label for="bill">Bill Total:</label>
-                                        <input type="text"  name="Billtotal"  id="bill" required minlength="1"><br><br>
-                                    </div>
+        <div class="container">
+            <form class="input-form">
+                    <div class="header">
+                         <h3>   ITMD 541- Lab3- Megha Shetty</h3>
+                      <h2>Tip Calculator</h2>  
+                    </div>
+                        <section>
+                            <div class="tipcalculator">
+                                    <div class="input">
+                                            <div class="box">
+                                                    <div class="input-box" id="billtotalbox">
+                                                        <label for="bill">Bill Total:</label>
+                                                        <input type="text"  name="Billtotal"  id="bill" required minlength="1"><br><br>
+                                                    </div>
 
-                                    <div class="range-box" id="tipbox">
-                                        <label for="tip">Tip:</label>
-                                        <input type="range" min="0" id="tip" max="100" value="0" name="tip"><br><br>
-                                    </div>
+                                                    <div class="range-box" id="tipbox">
+                                                        <label for="tip">Tip:</label>
+                                                        <input type="range" min="0" id="tip" max="100" value="0" name="tip"><br><br>
+                                                    </div>
 
-                                    <div class="input-box" id="tippercentagebox">
-                                            <label for="TipPercentage">Tip Percentage:</label>
-                                            <input name="TipPercentage"  disabled id="tip-percentage" ><br><br>
-                                    </div>
+                                                    <div class="input-box" id="tippercentagebox">
+                                                            <label for="TipPercentage">Tip Percentage:</label>
+                                                            <input name="TipPercentage"  disabled id="tip-percentage" ><br><br>
+                                                    </div>
 
-                                    <div class="input-box" id="tipamountbox">
-                                            <label for="tipamount">Tip Amount : </label>
-                                            <input name="tipamount" disabled id="tip-amount"><br><br>
-                                    </div>
+                                                    <div class="input-box" id="tipamountbox">
+                                                            <label for="tipamount">Tip Amount : </label>
+                                                            <input name="tipamount" disabled id="tip-amount"><br><br>
+                                                    </div>
 
-                                    <div class="input-box" id="totalamountbox">
-                                            <label for="totalamount">Total Bill with Tip:</label>
-                                            <input name="totalamount" disabled id="total-amount"><br><br>
-                                    </div>                               
+                                                    <div class="input-box" id="totalamountbox">
+                                                            <label for="totalamount">Total Bill with Tip:</label>
+                                                            <input name="totalamount" disabled id="total-amount"><br><br>
+                                                    </div>                               
+                                            </div>
+                                        </div>
+                                
                             </div>
-                        </div>
-                </form>
-            </div>
-        </section>   
-    </div>
+                        </section>   
+            </form>
+        </div>
+    
     <script>
 
         let sliders = document.querySelectorAll("input[type='range']");
