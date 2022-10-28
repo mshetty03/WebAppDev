@@ -83,8 +83,14 @@ background: rgb(229, 228, 230);
 
 
 @media(max-width: 600px){
+
+  body{
+    height:auto;
+    
+  }
   .container{
       min-width: 280px;
+      
   }
 
   .input-box{
@@ -92,3 +98,42 @@ background: rgb(229, 228, 230);
       width: 100%;
   }
 }
+
+
+@media(max-width: 480px){
+
+  *{
+    font-size: medium;
+   
+  }
+
+  body{
+    height:auto;
+    background-color: rgb(95, 84, 132);
+  }
+
+  .container{
+      min-width: 200px;
+      padding: 0;
+      margin: 0;
+  }
+
+  .input-box{
+      margin-bottom: 12px;
+      width: 100%;
+      
+  }
+  .input-box label{
+    font-size: medium;
+    
+  }
+
+  .input-box input{
+    height: 20px;
+    width: 95%;
+  
+  }
+
+}
+
+
