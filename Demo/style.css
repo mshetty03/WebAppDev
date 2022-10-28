@@ -14,24 +14,31 @@ body{
   justify-content: center;
   align-items: center;
   background-color:rgb(105, 93, 116);
- 
+  background-image: url('./sam-dan-truong--rF4kuvgHhU-unsplash.jpg');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  
 }
+
 
 
 .container{
   width: 50%;
   max-width: 650px;
-  background: white;
+  background: rgba(234, 231, 231, 0.9);
   padding: 28px;
   margin: 0 28px;
   border-radius: 10px;
-  box-shadow: inset -2px 2px 2px white;
+  box-shadow: 10px 10px 10px 10px black;
+  
 }
 
 .title1{
   text-align: center;
   color: rgb(105, 93, 116);
   border-bottom: solid 1px white;
+  padding-bottom: 2%;
 }
 .title2{
   text-align: center;
@@ -58,7 +65,7 @@ body{
 }
 .input-box label{
   width: 95%;
-  color: rgb(105, 93, 116);
+  color:rgb(105, 93, 116);
   font-size: 20px;
   font-weight: 400;
   margin: 5px 0;
@@ -86,6 +93,7 @@ background: rgb(229, 228, 230);
 
   body{
     height:auto;
+    background-image: linear-gradient(rgb(105, 93, 116),rgb(162, 138, 185),rgb(105, 93, 116));
     
   }
   .container{
@@ -109,7 +117,9 @@ background: rgb(229, 228, 230);
 
   body{
     height:auto;
-    background-color: rgb(95, 84, 132);
+    
+    background-image: linear-gradient(rgb(105, 93, 116),rgb(162, 138, 185),rgb(105, 93, 116));
+ 
   }
 
   .container{
