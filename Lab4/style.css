@@ -1,0 +1,138 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    letter-spacing: 0.4px;
+}
+
+body{
+    font-family:"Rubik",sans-serif;
+    line-height: 1;
+    background-repeat: no-repeat;
+    background: linear-gradient(
+        180deg,
+        rgba(54, 54, 246, 0.723) 0%,
+        rgba(97, 33, 107, 0.692) 80%
+    );
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffffbd;
+    height: 100vh;
+    font-size: 20px ;
+}
+
+.container{
+    padding: 20px 70px;
+    color:#fff;
+}
+
+.title{
+    font-size: 30px ;
+    padding: 2%;
+    border-bottom: solid 1px white;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #00000051;
+    margin: 20px 0px 0px 0px;
+    box-shadow: 2.5px 5px 4px rgba(65, 22, 72, 0.692);
+    color: #ffffffbd;
+    gap: 1rem;
+}
+
+.input-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-part input{
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid rgb(106, 104, 104);
+    padding: 0 10px;
+    
+}
+.input-part button{
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    padding: 0 10px;
+    background: rgb(229, 228, 230);
+}
+
+.current-weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #00000051;
+    margin: 20px 0px 0px 0px;
+    box-shadow: 2.5px 5px 4px rgba(65, 22, 72, 0.692); 
+    color: #ffffffbd;;
+    
+}
+
+.dayhour{
+    font-size: 25px;
+}
+.name{
+    font-size: 21px;
+}
+
+.weather-forecast-item{
+    border-radius: 10px;
+    background-color: #00000051;
+}
+
+.weather-forecastmain{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #00000051;
+    margin: 20px 0px 0px 0px;
+    box-shadow: 2.5px 5px 4px rgba(65, 22, 72, 0.692); 
+    color: #ffffffbd;;
+  
+}
+
+    .loader {
+        display: none;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+     }
+     
+     .loading {
+        border: 2px solid #ccc;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border-top-color: #1ecd97;
+        border-left-color:  #1ecd97;
+        animation: spin 1s infinite ease-in;
+     }
+     
+     @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+     }
