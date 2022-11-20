@@ -149,7 +149,7 @@ body{
             
         }
       
-        .input-box{
+        .input-part{
             margin-bottom: 12px;
             width: 100%;
         }
@@ -176,17 +176,17 @@ body{
             margin: 0;
         }
       
-        .input-box{
+        .input-part{
             margin-bottom: 12px;
             width: 100%;
             
         }
-        .input-box label{
+        .input-part label{
           font-size: medium;
           
         }
       
-        .input-box input{
+        .input-part input{
           height: 20px;
           width: 95%;
         
