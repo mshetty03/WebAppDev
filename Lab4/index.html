@@ -1,1 +1,105 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style2.css"/>
+  
+</head>
+<body>
+    <div class="container">   
+            <div class="controls" id="controls">
+                <h1 class="title">Weather API Dashboard</h1>
+                <section class="input-part">
+                        <label for="searchbar">Search for a City:</label> 
+                        <input type=text name= "city" id="city" placeholder="Enter City Name Here">
+                        <label for="btn"></label> 
+                        <button id="searchbtn" name="searchbtn">Search</button>
+                        <p id="or">-------- or --------</p>
+                        <label for="getLocation"></label>
+                        <button id="locationbtn" name="locationbtn">Get Device Location</button>
+                </section> 
+            </div>
+        
+
+            <div class="loader" id="loader">
+                <div class="loading"></div>
+            </div>
+
+            <div class="weather" id="weather">
+            <div class="current-weather" id="current-weather">
+                <div class="dayhour" id="dayhour"></div>
+                <div class="name" id="name"></div>
+                <img class="icon" id="icon" src="" alt="">
+                <div class="comment" id="comment"></div>
+                <div class="temp" id="temp"></div>
+                <div class="precip"  id="precip"></div>
+                <div class="humidity"  id="humidity"></div>
+                <div class="wind"  id="wind"></div>
+            </div>
+
+            <div class="weather-forecastmain" id="weather-forecastmain">
+                <div class="weather-forecast" id="weather-forecast-1">
+                <div class="weather-forecast-item">
+                
+                </div>
+                </div>
+
+
+                <div class="weather-forecast" id="weather-forecast-2">
+                <div class="weather-forecast-item">
+                    
+                </div>
+                </div>
+
+
+                <div class="weather-forecast" id="weather-forecast-3">
+                <div class="weather-forecast-item">
+                        
+                </div>
+                </div>
+
+
+                <div class="weather-forecast" id="weather-forecast-4">
+                <div class="weather-forecast-item">
+                
+                </div>
+                </div>
+
+
+
+                <div class="weather-forecast" id="weather-forecast-5">
+                <div class="weather-forecast-item">
+                
+                </div>
+                </div>
+
+
+                <div class="weather-forecast" id="weather-forecast-6">
+                <div class="weather-forecast-item">
+                    
+                </div>
+                </div>
+
+
+                <div class="weather-forecast" id="weather-forecast-7">
+                <div class="weather-forecast-item">
+                        
+                </div>
+                </div>
+
+
+                <div class="weather-forecast" id="weather-forecast-8">
+                <div class="weather-forecast-item">
+                        
+                </div>
+                </div>
+
+            </div>
+    </div>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>
