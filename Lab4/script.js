@@ -133,8 +133,9 @@ function displayWeather(data){
     
     else{
         document.getElementById("loader").style.display = "none";
+        
 
-
+        document.getElementById('currentday').innerHTML='Current Day Weather  ';
         currentweatherDiv=document.querySelector('#current-weather');
 
         document.getElementById('name').innerHTML=' '+data.region;
@@ -150,7 +151,7 @@ function displayWeather(data){
         //console.log(data.next_days[0].day);
 
         //Fetching 7 day  Weather
-        currentweatherDiv=document.querySelector('#title2');
+        //currentweatherDiv=document.querySelector('#title2');
 
         document.getElementById('7day').innerHTML='7 Day Weather Forecast ';
         
