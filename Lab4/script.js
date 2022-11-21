@@ -33,7 +33,9 @@ window.addEventListener('DOMContentLoaded', function(){
     }
      
     function onError(error){
-        alert("Error fetching device location! Please enter a location");
+        alert("User denied access to device location! Please enter a location");
+        document.getElementById("loader").style.display = "none";
+                
     }
     
     function Onsucess(position){
@@ -44,6 +46,7 @@ window.addEventListener('DOMContentLoaded', function(){
         //let api=`https://weatherdbi.herokuapp.com/data/weather/`+position.coords.latitude + "," + position.coords.longitude)
         fetch("https://weatherdbi.herokuapp.com/data/weather/"+position.coords.latitude + "," + position.coords.longitude)
         .then(function(res){
+            
             console.log("here1");
             return res.json();
     
@@ -88,15 +91,15 @@ window.addEventListener('DOMContentLoaded', function(){
       })
       .then(function(jsonData){
             
-            if(jsonData.region)
-            {
+            //if(jsonData.region)
+           // {
             displayWeather(jsonData)
-            }
-            else{
-                alert("Enter valid city name");
-                document.getElementById('city').value = "";
-                document.getElementById("loader").style.display = "none";
-            }
+            //}
+            //else{
+              //  alert("Enter valid city name");
+               // document.getElementById('city').value = "";
+                //document.getElementById("loader").style.display = "none";
+            //}
             
 
        // document.querySelector("#temp").textContent = "Temp:" + temp;
@@ -108,8 +111,27 @@ window.addEventListener('DOMContentLoaded', function(){
 
 //To display weather data
 function displayWeather(data){
+
+    if(data.status== "fail" ){
+
+        if(data.code==1){
+     alert(data.message+": Please enter a valid city name");
+     //document.getElementById("infotxt").innerHTML=data.message;
+     document.getElementById('city').value = "";
+     document.getElementById("loader").style.display = "none";
+        }
+        else
+        {
+            alert(data.message + ": Please enter a valid city name");
+     //document.getElementById("infotxt").innerHTML=data.message;
+     document.getElementById('city').value = "";
+     document.getElementById("loader").style.display = "none";
+        }
     //Fetching Current Weather
-        
+    }
+    
+    
+    else{
         document.getElementById("loader").style.display = "none";
 
 
@@ -160,5 +182,6 @@ function displayWeather(data){
         mintemp.innerHTML= '<br/>' + 'Min Temp : ' +data.next_days[i].min_temp.f + ' °F';
         WeatherforecastDiv.append(mintemp);
         }  
+    }
     }
 
