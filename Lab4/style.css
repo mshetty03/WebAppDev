@@ -39,11 +39,12 @@ body{
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background-color: #00000051;
+    background-color:  #00000051;
     margin: 20px 0px 0px 0px;
     box-shadow: 2.5px 5px 4px rgba(65, 22, 72, 0.692);
-    color: #ffffffbd;
+    color: #fff;
     gap: 1rem;
+    padding-bottom: 2%;
 }
 
 .input-part{
