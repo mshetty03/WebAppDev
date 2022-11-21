@@ -2,7 +2,20 @@ window.addEventListener('DOMContentLoaded', function(){
     
     let searchbtn = document.getElementById('searchbtn');
     let locationbtn = document.getElementById('locationbtn');
-    searchbtn.addEventListener('click', fetchWeather);
+    //searchbtn.addEventListener('click', fetchWeather);
+    
+
+
+    searchbtn.addEventListener('click', () => {
+        let checkcity = document.getElementById('city').value;
+        if(checkcity.length === 0){
+          this.alert("please enter city name or use get device location button to fetch weather for current location")
+        } else {
+            fetchWeather()
+        }
+        })
+
+
     locationbtn.addEventListener('click', geolocationfun);
     //$('.loader').css('display'​​​​​​​​​​​​​​​​​​​​​​​​​​​,'block');​​​​​​
     //document.getElementById("loader").style.display = "block";
@@ -15,12 +28,12 @@ window.addEventListener('DOMContentLoaded', function(){
             navigator.geolocation.getCurrentPosition(Onsucess,onError);
             }
       else{
-           alert("your browser doesnot support geolocation")
+           alert("your browser doesnot support geolocation");
       }
     }
      
     function onError(error){
-        console.log(error);
+        alert("Error fetching device location! Please enter a location");
     }
     
     function Onsucess(position){
@@ -46,6 +59,7 @@ window.addEventListener('DOMContentLoaded', function(){
             }
             else{
                 alert("Enter valid city name");
+                //document.getElementById("infotxt").innerHTML="Enter Valid city name";
                 document.getElementById('city').value = "";
                 document.getElementById("loader").style.display = "none";
                 
@@ -58,10 +72,15 @@ window.addEventListener('DOMContentLoaded', function(){
     
     // City entered   
     function fetchWeather(){
+
         document.getElementById("loader").style.display = "block";
         let city=document.getElementById("city").value;
+
+        
         var headers = {}
-    console.log(city)
+
+
+        console.log(city)
       fetch("https://weatherdbi.herokuapp.com/data/weather/" + city)
       .then(function(res){
         console.log("before return");
@@ -78,9 +97,11 @@ window.addEventListener('DOMContentLoaded', function(){
                 document.getElementById('city').value = "";
                 document.getElementById("loader").style.display = "none";
             }
+            
 
        // document.querySelector("#temp").textContent = "Temp:" + temp;
       })
+    
       .catch(error=> console.log(error));
     
     }
@@ -90,6 +111,8 @@ function displayWeather(data){
     //Fetching Current Weather
         
         document.getElementById("loader").style.display = "none";
+
+
         currentweatherDiv=document.querySelector('#current-weather');
 
         document.getElementById('name').innerHTML=' '+data.region;
@@ -105,6 +128,9 @@ function displayWeather(data){
         //console.log(data.next_days[0].day);
 
         //Fetching 7 day  Weather
+        currentweatherDiv=document.querySelector('#title2');
+
+        document.getElementById('7day').innerHTML='7 Day Weather Forecast ';
         
         for(i=1;i<=7;i++)
         {
